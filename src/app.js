@@ -13,29 +13,30 @@ import  'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
 
-store.subscribe(() => {
-  const state = store.getState();
-  const visibleExpenses = getVisibleExpenses(state.expenses,state.filters);
-  console.log(visibleExpenses);
-});
+// store.subscribe(() => {
+//   const state = store.getState();
+//   const visibleExpenses = getVisibleExpenses(state.expenses,state.filters);
+//   console.log(visibleExpenses);
+// });
 
-store.dispatch(addExpense({
-  description:'Water Bill',
-  amount: 60,
-  createdAt: moment().subtract(3, 'days').valueOf()
-}));
+// test data
+// store.dispatch(addExpense({
+//   description:'Water Bill',
+//   amount: 60,
+//   createdAt: moment().subtract(3, 'days').valueOf()
+// }));
 
-store.dispatch(addExpense({
-  description:'Gas Bill',
-  amount: 220,
-  createdAt: moment().add(3, 'days').valueOf()
-}));
+// store.dispatch(addExpense({
+//   description:'Gas Bill',
+//   amount: 220,
+//   createdAt: moment().add(3, 'days').valueOf()
+// }));
 
-store.dispatch(addExpense({
-  description:'Rent',
-  amount: 2220,
-  createdAt: moment().subtract(6, 'days').valueOf()
-}));
+// store.dispatch(addExpense({
+//   description:'Rent',
+//   amount: 2220,
+//   createdAt: moment().subtract(6, 'days').valueOf()
+// }));
 
 // store.dispatch(setTextFilter('gas'));
 
