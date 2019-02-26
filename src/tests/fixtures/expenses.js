@@ -21,5 +21,5 @@ export const expenses = [
     note: 'All the things',
     amount: 4500,
     createdAt: moment(0).add(4, 'days').valueOf()
-  },
+  }
 ];

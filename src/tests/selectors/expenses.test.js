@@ -3,7 +3,7 @@ import selectExpenses from '../../selectors/expenses';
 import { expenses } from '../fixtures/expenses';
 
 
-test('should filter results by text value', () => {
+test('filter results by text value', () => {
   const filters = { 
     text: 'e',
     sortBy: 'date',
